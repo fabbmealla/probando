@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sanatorio {
+    width: 100%;
+}
+
+.cuadros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cardEsp {
+    display: flex;
+    margin: 1rem;
+    padding: 0.1rem;
+    width: 18rem;
+    justify-content: center;
+
+}
+
+.card img {
+    padding: 0.5rem;
+}
+
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+
+.card2 {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card2.div {
+    margin: 1rem;
+}
+
+.margin-top {
+    padding-top: 1rem;
+}
+
+.card3 {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0.5rem;
+}

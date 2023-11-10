@@ -1,0 +1,74 @@
+[
+    {
+        "especialidad": "Clínico",
+        "profesional": "Dr. Carlos Almada",
+        "atencion": "Martes, Jueves y Viernes",
+        "atencionDias": ["Martes", "Jueves", "Viernes"],
+        "horarios": ["14", "14:30", "15", "15:30", "16", "16:30"],
+        "img": "./images/clinico.png",
+        "id": 1
+    },
+    {
+        "especialidad": "Traumatología",
+        "profesional": "Dr. Alberto Fuentes",
+        "atencion": "Lunes",
+        "atencionDias": ["Lunes"],
+        "horarios": ["9", "10", "11", "12"],
+        "img": "./images/traumatologia1.png",
+        "id": 2
+    },
+    {
+        "especialidad": "Oftalmología",
+        "profesional": "Dra. Sara Lescano",
+        "atencion": "Lunes y Miércoles",
+        "atencionDias": ["Lunes", "Miércoles"],
+        "horarios": ["10", "11", "12", "15", "16", "17"],
+        "img": "./images/oftalmologia1.png",
+        "id": 3
+    },
+    {
+        "especialidad": "Cardiología",
+        "profesional": "Dr. Mariano Fernandez",
+       "atencion": "Lunes, Martes y Viernes",
+        "atencionDias": ["Lunes", "Martes", "Viernes"],
+        "horarios": ["8", "8:30", "9", "9:30", "10", "10:30"],
+        "img": "./images/cardiologia1.png",
+        "id": 4
+    },
+    {
+        "especialidad": "Dermatología",
+        "profesional": "Dra. Alejandra Diaz",
+        "atencion": "Martes y Jueves",
+        "atencionDias": ["Martes", "Jueves"],
+        "horarios": ["8", "9", "10", "11", "12"],
+        "img": "./images/repuesto.png",
+        "id": 5
+    },
+    {
+        "especialidad": "Otorrinolaringología",
+        "profesional": "Dra. Vanesa Torres",
+        "atencion": "Lunes y Jueves",
+        "atencionDias": ["Lunes", "Jueves"],
+        "horarios": ["12", "13", "14", "15", "16"],
+        "img": "./images/otorrino.png",
+        "id": 6
+    },
+    {
+        "especialidad": "Ginecología",
+        "profesional": "Dra. Florencia Armas",
+        "atencion": "Miércoles",
+        "atencionDias": ["Miércoles"],
+        "horarios": ["15", "16", "17", "18", "19"],
+        "img": "./images/ginecologia.png",
+        "id": 7
+    },
+    {
+        "especialidad": "Nutricionista",
+        "profesional": "Dr. Pedro Menendez",
+        "atencion": "Martes y Miércoles",
+        "atencionDias": ["Martes", "Miércoles"],
+        "horarios": ["8", "8:30", "9", "9:30", "10", "10:30", "11", "11:30"],
+        "img": "./images/nutricionista.png",
+        "id": 8
+    }
+]
