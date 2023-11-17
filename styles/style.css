@@ -52,19 +52,28 @@ main {
     padding: 0.1rem;
     width: 18rem;
     justify-content: center;
-
 }
 
 .card img {
     padding: 0.5rem;
 }
 
+.cuadros-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card-body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.mostrarRes {
+    align-items: left;
+    justify-content: left;
 }
 
 img {

@@ -8,13 +8,12 @@ fetch("./javascript/especialidades.json")
     const botones = document.querySelectorAll(".btn");
     botones.forEach((boton) => {
     boton.addEventListener("click", () => abrirReserva(boton.id));
-  })
+    })
   })
 
 const reservarTurnosMedicos = document.querySelector("#reserva");
 const llenarFormulario = document.querySelector("#formulario");
 const divAceptar = document.querySelector("#aceptar")
-
 
 function mostrarEspecialidades(tarjetitasEspecialidades) {
     tarjetitasEspecialidades.forEach(especialidad => {
@@ -117,42 +116,40 @@ function abrirReserva(especialidadId) {
 
 function mostrarTurno() {
     const ultimaReserva = recuperarUltimaReserva()
-    divAceptar.innerHTML = `<div class="card card3">
-    <h4>¡Turno reservado con éxito!</h4>
-    <p> ${ultimaReserva.especialidad}</p>
-    <p>Día: ${ultimaReserva.dia}</p>
-    <p>Horario: ${ultimaReserva.horario} hs.</p>
-    <a href="#finalizarRes" class="btn btn-primary" id="finalizar">Finalizar</a> 
-    </div>`
-
-    
-    const botonFinalizar = document.querySelector("#finalizar");
-    botonFinalizar.addEventListener("click", () => finalizar());
-}
-
-function finalizar() {
-
-  Swal.fire({
-    icon: "success",
-    title: "Gracias por haber utilizado nuestro servicio. <br>Recuerde concurrir a la cita con 15 minutos de anticipación.",
-    showClass: {
-      popup: `
-        animate__animated
-        animate__fadeInUp
-        animate__faster
-      `
-    },
-    hideClass: {
-      popup: `
-        animate__animated
-        animate__fadeOutDown
-        animate__faster
-      `
-    }
-  });
-
-  llenarFormulario.innerHTML = ""
-  divAceptar.innerHTML = ""
+    Swal.fire({
+      title: "¡Turno reservado con éxito!",
+      text: `${ultimaReserva.especialidad} el día: ${ultimaReserva.dia}.
+      Horario: ${ultimaReserva.horario} hs.`,
+      icon: "info",
+      showCancelButton: false,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Finalizar"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          icon: "success",
+          title: "Gracias por haber utilizado nuestro servicio. <br>Recuerde concurrir a la cita con 15 minutos de anticipación.",
+          showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInUp
+              animate__faster
+            `
+          },
+          hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutDown
+              animate__faster
+            `
+          }
+        });
+        llenarFormulario.innerHTML = ""
+        divAceptar.innerHTML = ""
+        window.scrollTo(0,0);
+      }
+    });
 }
 
 function guardarJson (especialidadClick) {
